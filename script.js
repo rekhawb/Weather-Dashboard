@@ -23,7 +23,7 @@ function getApi() {
 
   var searchHistory = localStorage.getItem("Search Terms").split(",");
   srchContainer.innerHTML = "";
-  for (i = searchHistory.length - 1; i > 3; i--) {
+  for (i = 0; i <  searchHistory.length ; i++) {
     htmlCreate = ` <div style="background-color:#A9A9A9; font-size:2rem;border-radius:5px;text-align:center;height:100%;padding:5px;margin:5px">
    <button id="btn" style="width:100%; padding:5px; margin:5px; background-color:#A9A9A9;border:none;height:60% ">${searchHistory[i]}</button>
    </div>`;
@@ -132,7 +132,7 @@ function getForecast(resultsLat, resultsLon, resultsCity, resultsDt) {
 
       for (i = 0; i < resultsDaily.length - 3; i++) {
         resultsDt = new Date();
-        resultsDt.setDate(resultsDt.getDate() + i);
+        resultsDt.setDate(resultsDt.getDate() + (i+1));
         resultsDt = resultsDt.toLocaleDateString("en-us");//toISOString().substring(0, 10);
         var resultsTemp = resultsDaily[i].temp.day + " <span>&#176;</span>F";
         var resultsHmdty = resultsDaily[i].humidity + " %";
