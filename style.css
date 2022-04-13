@@ -1,0 +1,50 @@
+
+body{
+
+    width:98%;
+    margin:auto;
+    background-color: gainsboro;
+}
+
+header{
+   background-color: rgb(0, 0, 128);
+   color: rgb(255, 255, 255);
+    line-height: 8rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    position: relative;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.resultsCard{
+margin:5px;
+padding:5px;
+font-size:1.25rem;
+border:solid 1px black;
+background-color: navy;
+font-weight: bold;
+color:white;
+text-align: left;
+
+}
+
+.resultsCard1{
+  padding: 5px;
+  margin:5px;
+  font-size:2rem;
+
+}
+
+
+.srchCard{
+    font-size: 2rem;
+    text-align: center;
+    width:10%;
+
+}
